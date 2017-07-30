@@ -3,7 +3,9 @@ Future revistions will parse config file for setting. If the interface needs to 
 of the sniff function.
 
 `ip link add eth1 type dummy`
+
 `ip link set eth1 promisc on`
+
 `ip link set eth1 up`
 
 
@@ -12,8 +14,11 @@ Next you will need to configure the Mikrotik router to stream sniffed data. The 
 just basics needed to make the system work. Further configurations should be made for
 
 `/tool sniffer set streaming-enabled=yes`
+
 `/tool sniffer set streaming-server=<IP_OR_HOSTNAME_OF_SNORT_SERVER>`
+
 `/tool sniffer set filter-stream=yes`
+
 `/tool sniffer start`
 
 
